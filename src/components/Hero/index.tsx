@@ -1,4 +1,6 @@
 import heroImage from "@/assets/hero.png";
+import heroImageMobile from "@/assets/heroMobile.png";
+
 import "./styles.css";
 import Button from "../Button";
 import Dots from "../Dots";
@@ -23,7 +25,16 @@ const Hero: Component<Props> = (props) => {
 
   return (
     <section class="hero">
-      <img src={heroImage} alt="Zdjęcie główne" class="hero__image" />
+      <img
+        src={heroImage}
+        alt="Zdjęcie główne"
+        class="hero__image hero__image--desktop"
+      />
+      <img
+        src={heroImageMobile}
+        alt="Zdjęcie główne"
+        class="hero__image hero__image--mobile"
+      />{" "}
       <div class="hero__content">
         <div class="hero__inner">
           <div class="content-wrapper">

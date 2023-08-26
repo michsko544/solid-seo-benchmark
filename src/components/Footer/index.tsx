@@ -46,6 +46,7 @@ const Footer: Component = () => {
             <a
               href="https://github.com/michsko544/solid-seo-benchmark"
               target="_blank"
+              class="footer__social-link"
             >
               <svg
                 width="32"

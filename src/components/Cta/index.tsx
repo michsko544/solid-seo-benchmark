@@ -2,6 +2,7 @@ import { Component, mergeProps, splitProps } from "solid-js";
 import Button from "../Button";
 import "./styles.css";
 import ctaImage from "@/assets/cta-neon.png";
+import ctaImageMobile from "@/assets/cta-neon-mobile.png";
 
 type Props = {
   title?: string;
@@ -20,7 +21,16 @@ const Cta: Component<Props> = (props) => {
 
   return (
     <section class="cta">
-      <img src={ctaImage} alt="Neonowy kaktus" class="cta__image" />
+      <img
+        src={ctaImage}
+        alt="Neonowy kaktus"
+        class="cta__image cta__image--desktop"
+      />
+      <img
+        src={ctaImageMobile}
+        alt="Neonowy kaktus"
+        class="cta__image cta__image--mobile"
+      />{" "}
       <div class="cta__content">
         <div class="cta__inner">
           <div class="content-wrapper">
